@@ -139,6 +139,30 @@ h2{
 }
 
 .call-num-mobile{
+    margin-right: 94px;
+    margin-top: -20px;
+    padding: 15px 15px;
+    border-radius: 11px;
+    cursor: pointer;
+    border: none;
+    background-color: #EAFC7E;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #000000;
+}
+
+.menu__list-item-mobile-sales{
+    padding-top: 10px;
+    list-style: none;
+}
+
+.header-tel{
+    font-size: 12px;
+}
+
+.call-num-mobile{
     display: none;
 }
 

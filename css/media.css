@@ -24,6 +24,13 @@
 }
 
 
+@media(max-width:1838px){
+    .call-num-form{
+        margin-top: 60px;
+    }
+}
+
+
 @media(max-width:1806px){
     .logo-header{
         margin-right: 40px;
@@ -45,6 +52,11 @@
 
     .contact__img{
         display: none;
+    }
+
+    .privat-header{
+        margin-top: 0px;
+        margin-right: 13px;
     }
 }
 
@@ -203,7 +215,7 @@
         margin-right: 20px;
     }
     .header-tel{
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .news__inner{
@@ -274,6 +286,18 @@
     .privat-text__top-footer{
         margin-top: 0;
     }
+
+    .form-footer{
+        margin-top: 30px;
+    }
+
+    .sales-text__top-header{
+        min-width:110px;
+    }
+
+    .popup{
+        margin-left: -200px;
+    }
     
 }
 @media(max-width:1385px){
@@ -302,6 +326,7 @@
     .list__search{
         margin-top: 50px;
     }
+
 }
 
 @media(max-width:1153px){
@@ -339,8 +364,7 @@
     }
 
     .connect-adapt{
-        left: 17%;
-        top:20%;
+        margin-left: -170px;
     }
 }
 
@@ -564,6 +588,10 @@
     .about__shop{
         margin-left: 10px;
     }
+
+    .call-num-form{
+        margin-top: 55px;
+    }
 }
 
 @media(max-width:945px){
@@ -612,10 +640,14 @@
         justify-content: center;
     }
 
-    .connect-adapt{
-        left: 10%;
-        top:20%;
-    }
+}
+
+@media(max-width:815px){
+
+    .popup{
+        margin-left: -250px;
+    }   
+
 }
 
 @media(max-width:790px){
@@ -641,9 +673,6 @@
         margin-top: 45px;
     }
 
-    .call-num{
-        display: none;
-    }
     .slider__block{
         left: 14.5%;
     }
@@ -691,11 +720,6 @@
         padding-left: 20px;
     }
 
-    .connect-adapt{
-        left: 14%;
-        top:20%;
-        max-width: 600px;
-    }
 
     .form-connect{
         width: 407px;
@@ -710,6 +734,10 @@
 
     .close-connect{
         left: 450px;
+    }
+
+    .call-num{
+        display: none;
     }
 }
 
@@ -818,6 +846,10 @@
         max-width: 500px;
         max-height: 270px;
     }
+
+    .popup{
+        margin-left: -200px;
+    } 
 }
 
 
@@ -827,12 +859,6 @@
     }
     .life__show{
         display: none;
-    }
-
-    .connect-adapt{
-        left: 5%;
-        top:20%;
-        max-width: 600px;
     }
 
     .form-connect{
@@ -849,6 +875,8 @@
     .close-connect{
         left: 450px;
     }
+
+
 }
 
 @media(max-width:615px){
@@ -877,14 +905,6 @@
         margin-left: 30px;
     }
 
-
-
-    .connect-adapt{
-        left: 0.5%;
-        top:20%;
-        max-width: 400px;
-    }
-
     .form-connect{
         width: 300px;
         height: 60px;
@@ -898,6 +918,10 @@
 
     .close-connect{
         left: 20px;
+    }
+
+    .connect-adapt{
+        margin-left: -100px;
     }
 }
 
@@ -981,8 +1005,13 @@
     .header-tel-mobile{
         color: #000;
         text-decoration: none;
-        padding-top: 40px;
+        padding-top: 20px;
         display: block;
+        margin-bottom: 0;
+    }
+
+    .menu__list-item-mobile-sales{
+        padding-top: 10px;
     }
 
     .slider__block{
@@ -1099,6 +1128,21 @@
     .smart__photo{
         max-width: 320px;
     }
+    .connect-adapt{
+        margin-left: -140px;
+    }
+
+    .menu__list-item-mobile{
+        padding-top: 15px;
+      }
+
+      .header-tel-mobile{
+        padding-top: 15px;
+    }
+
+    .popup{
+        margin-left: -130px;
+    } 
 }
 
 @media(max-width:410px){
@@ -1125,14 +1169,6 @@
         margin-left: 40px;
     }
 
-
-
-    .connect-adapt{
-        left: 0.5%;
-        top:20%;
-        max-width: 310px;
-    }
-
     .form-connect{
         width: 280px;
         height: 60px;
@@ -1153,7 +1189,22 @@
     .form-connect::placeholder{
         color: #B0B0B0;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .form__title{
+        font-size: 16px;
+        text-align: left;
+    }
+    .close{
+        right: 70px;
+    }
+
+    .connect-adapt{
+        margin-left: -100px;
+    }
+    .form-connect{
+        margin-left: 12px;
     }
 }
 
@@ -1188,7 +1239,7 @@
         left: 43%;
     }
     .menu__list-item-mobile{
-        padding-top: 25px;
+        padding-top: 10px;
       }
 
       .buy__btn{
@@ -1206,14 +1257,6 @@
     }
 }
 @media(max-width:380px){
-
-    .menu__list-item-mobile{
-        padding-top: 20px;
-      }
-
-      .header-tel-mobile{
-        padding-top: 20px;
-    }
 
     .smart__photo{
         max-width: 300px;
