@@ -26,17 +26,18 @@
                 <img class="number-header" src="images/header-icon/number-header.svg" alt="number">
                 <a href="tel:84956480020" class="header-tel">8 (495) 648-00-20</a>
             </div>
-            <form action="" method="POST">
-                <button class="call-num" data-popup="60">Заказать звонок</button>
-<div id="popup60" class="popup connect-adapt">
+            <form class="call-num-form" action="" method="POST">
+                <input type="checkbox" id="modal2">
+                <label class="call-num call-num-top" for="modal2">Заказать звонок</label>
+<div class="popup connect-adapt">
                 <div class="form__connect">
                         <div class="form__title">Введите данные и наш
 специалист позвонит Вам</div>
-                    <span class="close close-connect">&times;</span>
+                        <label for="modal2" class="close">+</label>
                         <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
                         <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
                         <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
-                        <button class="form__connect-btn"  data-popup="popup60">Заказать звонок</button>
+                        <button class="form__connect-btn">Заказать звонок</button>
                 </div>
             </div>
             </form>
@@ -65,17 +66,17 @@
                  <nav class="menu__mobile">
 
                     <form action="">
-                        <button class="call-num-mobile" data-popup="62">Заказать звонок</button>
+                        <button class="call-num-mobile">Заказать звонок</button>
 
-                        <div id="popup62" class="popup connect-adapt">
+                        <div class="popup connect-adapt">
                             <div class="form__connect">
                                     <div class="form__title">Введите данные и наш
             специалист позвонит Вам</div>
-                                <span class="close close-connect">&times;</span>
+                                <div class="close close-connect">+</div>
                                     <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
                                     <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
                                     <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
-                                    <button class="form__connect-btn"  data-popup="popup62">Заказать звонок</button>
+                                    <button class="form__connect-btn">Заказать звонок</button>
                             </div>
                         </div>
                         
@@ -195,21 +196,23 @@
         <img class="number__footer" src="images/footer/number.png" alt="">
         <a href="tel:8495662442" class="tel__footer">8 (495) 662-44-20</a>
     </div>
-
-    <form action="" method="POST">
-        <button class="call-num-footer" data-popup="61">Заказать звонок</button>
-<div id="popup61" class="popup connect-adapt">
+<div class="form-footer">
+    <form class="call-num-form-footer" action="" method="POST">
+        <input type="checkbox" id="modal2">
+        <label class="call-num-footer" for="modal2">Заказать звонок</label>
+<div class="popup connect-adapt">
         <div class="form__connect">
                 <div class="form__title">Введите данные и наш
 специалист позвонит Вам</div>
-            <span class="close close-connect">&times;</span>
+                <label for="modal2" class="close">+</label>
                 <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
                 <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
                 <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
-                <button class="form__connect-btn"  data-popup="popup61">Заказать звонок</button>
+                <button class="form__connect-btn">Заказать звонок</button>
         </div>
     </div>
     </form>
+</div>
     <div class="cabimnet__footer">
         <img class="privat-footer" src="images/header-icon/private-header.svg" alt="privat">
         <div class="privat-text__top-footer">Личный кабинет</div>

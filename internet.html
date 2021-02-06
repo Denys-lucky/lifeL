@@ -26,17 +26,18 @@
                 <img class="number-header" src="images/header-icon/number-header.svg" alt="number">
                 <a href="tel:84956480020" class="header-tel">8 (495) 648-00-20</a>
             </div>
-            <form action="" method="POST">
-                <button class="call-num" data-popup="60">Заказать звонок</button>
-<div id="popup60" class="popup connect-adapt">
+            <form class="call-num-form" action="" method="POST">
+                <input type="checkbox" id="modal2">
+                <label class="call-num call-num-top" for="modal2">Заказать звонок</label>
+<div class="popup connect-adapt">
                 <div class="form__connect">
                         <div class="form__title">Введите данные и наш
 специалист позвонит Вам</div>
-                    <span class="close close-connect">&times;</span>
+                        <label for="modal2" class="close">+</label>
                         <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
                         <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
                         <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
-                        <button class="form__connect-btn"  data-popup="popup60">Заказать звонок</button>
+                        <button class="form__connect-btn">Заказать звонок</button>
                 </div>
             </div>
             </form>
@@ -65,17 +66,17 @@
                  <nav class="menu__mobile">
 
                     <form action="">
-                        <button class="call-num-mobile" data-popup="62">Заказать звонок</button>
+                        <button class="call-num-mobile">Заказать звонок</button>
 
-                        <div id="popup62" class="popup connect-adapt">
+                        <div class="popup connect-adapt">
                             <div class="form__connect">
                                     <div class="form__title">Введите данные и наш
             специалист позвонит Вам</div>
-                                <span class="close close-connect">&times;</span>
+                                <div class="close close-connect">+</div>
                                     <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
                                     <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
                                     <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
-                                    <button class="form__connect-btn"  data-popup="popup62">Заказать звонок</button>
+                                    <button class="form__connect-btn">Заказать звонок</button>
                             </div>
                         </div>
                         
@@ -234,11 +235,12 @@
                         <div class="price__rate-text">Лайф 60<span class="one">1</span></div>
                         <img class="rate-img1" src="images/rates/rate1.svg" alt="">
                         <div class="price__tv">450 руб/мес</div>
-                    <form action="">
-                        <button class="connect-tv" data-popup="popup1">Подключиться</button>
-<div id="popup1" class="popup">
+                    <form class="form-email" method="POST" action="">
+                        <input type="checkbox" id="modal">
+                        <label class="connect-tv" for="modal">Подключиться</label>
+<div class="popup">
                         <div class="apply__connect">
-                            <span class="close">&times;</span>
+                            <label for="modal" class="close">+</label>
                             <div class="apply__title">Заявка на подключение</div>
                             <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
                         <div class="form-info">
@@ -247,7 +249,7 @@
                         </div>
                             <input class="checkbox" id="checkbox" type="checkbox">
                            <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                            <button  class="connect-tv" data-popup="popup1">Подключиться</button>
+                            <button  class="connect-tv">Подключиться</button>
                             <div class="pidcladka"></div>
                         </div>
 </div>
@@ -260,12 +262,13 @@
                         <div class="price__rate-text">Лайф 100</div>
                         <img class="rate-img1" src="images/rates/rate2.svg" alt="">
                         <div class="price__tv">500 руб/мес</div>
-                    <form action="">
-                        <button class="connect-tv" data-popup="popup2">Подключиться</button>
+                    <form class="form-email" method="POST" action="">
+                        <input type="checkbox" id="modal">
+                        <label class="connect-tv" for="modal">Подключиться</label>
 
-<div id="popup2" class="popup">
+<div class="popup">
                             <div class="apply__connect">
-                                <span class="close">&times;</span>
+                                <label for="modal" class="close">+</label>
                                 <div class="apply__title">Заявка на подключение</div>
                                 <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
                             <div class="form-info">
@@ -274,7 +277,7 @@
                             </div>
                                 <input class="checkbox" id="checkbox" type="checkbox">
                                <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                <button  class="connect-tv" data-popup="popup2">Подключиться</button>
+                                <button  class="connect-tv">Подключиться</button>
                                 <div class="pidcladka"></div>
                             </div>
     </div>
@@ -287,24 +290,24 @@
                         <div class="price__rate-text">Лайф 300<span class="one">2</span></div>
                         <img class="rate-img3" src="images/rates/rate3.svg" alt="">
                         <div class="price__tv">600 руб/мес</div>
-                    <form action="">
-                        <button class="connect-tv" data-popup="popup3">Подключиться</button>
-
-    <div id="popup3" class="popup">
-                            <div class="apply__connect">
-                                <span class="close">&times;</span>
-                                <div class="apply__title">Заявка на подключение</div>
-                                <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
-                            <div class="form-info">
-                                <input type="text" class="your__name upper" placeholder="ваше имя">
-                                <input type="tel" class="your__phone upper" placeholder="ваш телефон">
-                            </div>
-                                <input class="checkbox" id="checkbox" type="checkbox">
-                               <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                <button  class="connect-tv" data-popup="popup3">Подключиться</button>
-                                <div class="pidcladka"></div>
-                            </div>
-    </div>
+                    <form class="form-email" method="POST" action="">
+                        <input type="checkbox" id="modal">
+                        <label class="connect-tv" for="modal">Подключиться</label>
+<div class="popup">
+                        <div class="apply__connect">
+                            <label for="modal" class="close">+</label>
+                            <div class="apply__title">Заявка на подключение</div>
+                            <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <div class="form-info">
+                            <input type="text" class="your__name upper" placeholder="ваше имя">
+                            <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        </div>
+                            <input class="checkbox" id="checkbox" type="checkbox">
+                           <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
+                            <button  class="connect-tv">Подключиться</button>
+                            <div class="pidcladka"></div>
+                        </div>
+</div>
 
                     </form>
                     </div>
@@ -315,12 +318,13 @@
                         <div class="price__rate-text">Лайф 500<span class="one">2</span></div>
                         <img class="rate-img1" src="images/rates/rate4.svg" alt="">
                         <div class="price__tv">900 руб/мес</div>
-                    <form action="">
-                        <button class="connect-tv" data-popup="popup4">Подключиться</button>
+                    <form class="form-email" method="POST" action="">
+                        <input type="checkbox" id="modal">
+                        <label class="connect-tv" for="modal">Подключиться</label>
 
-                        <div id="popup4" class="popup">
+<div class="popup">
                             <div class="apply__connect">
-                                <span class="close">&times;</span>
+                                <label for="modal" class="close">+</label>
                                 <div class="apply__title">Заявка на подключение</div>
                                 <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
                             <div class="form-info">
@@ -329,7 +333,7 @@
                             </div>
                                 <input class="checkbox" id="checkbox" type="checkbox">
                                <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                <button  class="connect-tv" data-popup="popup4">Подключиться</button>
+                                <button  class="connect-tv">Подключиться</button>
                                 <div class="pidcladka"></div>
                             </div>
     </div>
@@ -348,12 +352,13 @@
                             <div class="price__rate-text">Дом-30<span class="one">1</span></div>
                             <img class="rate-img1" src="images/rates/rate5.svg" alt="">
                             <div class="price__tv">1000 руб/мес</div>
-                        <form action="">
-                            <button class="connect-tv" data-popup="popup5">Подключиться</button>
-
-            <div id="popup5" class="popup">
+                        <form class="form-email" method="POST" action="">
+                            <input type="checkbox" id="modal">
+                            <label class="connect-tv" for="modal">Подключиться</label>
+    
+    <div class="popup">
                                 <div class="apply__connect">
-                                    <span class="close">&times;</span>
+                                    <label for="modal" class="close">+</label>
                                     <div class="apply__title">Заявка на подключение</div>
                                     <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
                                 <div class="form-info">
@@ -362,7 +367,7 @@
                                 </div>
                                     <input class="checkbox" id="checkbox" type="checkbox">
                                    <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                    <button  class="connect-tv" data-popup="popup5">Подключиться</button>
+                                    <button  class="connect-tv">Подключиться</button>
                                     <div class="pidcladka"></div>
                                 </div>
         </div>
@@ -376,24 +381,24 @@
                             <div class="price__rate-text">Дом-50</div>
                             <img class="rate-img1" src="images/rates/rate6.svg" alt="">
                             <div class="price__tv">1500 руб/мес</div>
-                        <form action="">
-                            <button class="connect-tv">Подключиться</button>
-
-            <div id="popup6" class="popup">
-                                <div class="apply__connect" data-popup="popup6">
-                                    <span class="close">&times;</span>
-                                    <div class="apply__title">Заявка на подключение</div>
-                                    <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
-                                <div class="form-info">
-                                    <input type="text" class="your__name upper" placeholder="ваше имя">
-                                    <input type="tel" class="your__phone upper" placeholder="ваш телефон">
-                                </div>
-                                    <input class="checkbox" id="checkbox" type="checkbox">
-                                   <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                    <button  class="connect-tv" data-popup="popup6">Подключиться</button>
-                                    <div class="pidcladka"></div>
-                                </div>
-        </div>
+                        <form class="form-email" method="POST" action="">
+                            <input type="checkbox" id="modal">
+                            <label class="connect-tv" for="modal">Подключиться</label>
+    <div class="popup">
+                            <div class="apply__connect">
+                                <label for="modal" class="close">+</label>
+                                <div class="apply__title">Заявка на подключение</div>
+                                <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                            <div class="form-info">
+                                <input type="text" class="your__name upper" placeholder="ваше имя">
+                                <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                            </div>
+                                <input class="checkbox" id="checkbox" type="checkbox">
+                               <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
+                                <button  class="connect-tv">Подключиться</button>
+                                <div class="pidcladka"></div>
+                            </div>
+    </div>
 
                         </form>
                         </div>
@@ -404,24 +409,24 @@
                             <div class="price__rate-text">Дом-100<span class="one">2</span></div>
                             <img class="rate-img1" src="images/rates/rate7.svg" alt="">
                             <div class="price__tv">2000 руб/мес</div>
-                        <form action="">
-                            <button class="connect-tv" data-popup="popup7">Подключиться</button>
-
-                            <div id="popup7" class="popup">
-                                <div class="apply__connect">
-                                    <span class="close">&times;</span>
-                                    <div class="apply__title">Заявка на подключение</div>
-                                    <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
-                                <div class="form-info">
-                                    <input type="text" class="your__name upper" placeholder="ваше имя">
-                                    <input type="tel" class="your__phone upper" placeholder="ваш телефон">
-                                </div>
-                                    <input class="checkbox" id="checkbox" type="checkbox">
-                                   <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                    <button  class="connect-tv" data-popup="popup7">Подключиться</button>
-                                    <div class="pidcladka"></div>
-                                </div>
-        </div>
+                        <form class="form-email" method="POST" action="">
+                            <input type="checkbox" id="modal">
+                            <label class="connect-tv" for="modal">Подключиться</label>
+    <div class="popup">
+                            <div class="apply__connect">
+                                <label for="modal" class="close">+</label>
+                                <div class="apply__title">Заявка на подключение</div>
+                                <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                            <div class="form-info">
+                                <input type="text" class="your__name upper" placeholder="ваше имя">
+                                <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                            </div>
+                                <input class="checkbox" id="checkbox" type="checkbox">
+                               <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
+                                <button  class="connect-tv">Подключиться</button>
+                                <div class="pidcladka"></div>
+                            </div>
+    </div>
                         </form>
                         </div>
                     </div>
@@ -437,24 +442,24 @@
                             <div class="price__rate-text">Черное- 50</div>
                             <img class="rate-img1" src="images/rates/rate8.svg" alt="">
                             <div class="price__tv">500 руб/мес</div>
-                        <form action="">
-                            <button class="connect-tv" data-popup="popup8">Подключиться</button>
-
-                            <div id="popup8" class="popup">
-                                <div class="apply__connect">
-                                    <span class="close">&times;</span>
-                                    <div class="apply__title">Заявка на подключение</div>
-                                    <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
-                                <div class="form-info">
-                                    <input type="text" class="your__name upper" placeholder="ваше имя">
-                                    <input type="tel" class="your__phone upper" placeholder="ваш телефон">
-                                </div>
-                                    <input class="checkbox" id="checkbox" type="checkbox">
-                                   <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                    <button  class="connect-tv" data-popup="popup8">Подключиться</button>
-                                    <div class="pidcladka"></div>
-                                </div>
-        </div>
+                        <form class="form-email" method="POST" action="">
+                            <input type="checkbox" id="modal">
+                            <label class="connect-tv" for="modal">Подключиться</label>
+    <div class="popup">
+                            <div class="apply__connect">
+                                <label for="modal" class="close">+</label>
+                                <div class="apply__title">Заявка на подключение</div>
+                                <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                            <div class="form-info">
+                                <input type="text" class="your__name upper" placeholder="ваше имя">
+                                <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                            </div>
+                                <input class="checkbox" id="checkbox" type="checkbox">
+                               <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
+                                <button  class="connect-tv">Подключиться</button>
+                                <div class="pidcladka"></div>
+                            </div>
+    </div>
 
                         </form>
                         </div>
@@ -465,24 +470,24 @@
                             <div class="price__rate-text">Черное-75</div>
                             <img class="rate-img1" src="images/rates/rate9.svg" alt="">
                             <div class="price__tv">750 руб/мес</div>
-                        <form action="">
-                            <button class="connect-tv">Подключиться</button>
-
-                            <div id="popup9" class="popup" data-popup="popup9">
-                                <div class="apply__connect">
-                                    <pan class="close">&times;</pan>
-                                    <div class="apply__title">Заявка на подключение</div>
-                                    <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
-                                <div class="form-info">
-                                    <input type="text" class="your__name upper" placeholder="ваше имя">
-                                    <input type="tel" class="your__phone upper" placeholder="ваш телефон">
-                                </div>
-                                    <input class="checkbox" id="checkbox" type="checkbox">
-                                   <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                    <button  class="connect-tv" data-popup="popup9">Подключиться</button>
-                                    <div class="pidcladka"></div>
-                                </div>
-        </div>
+                        <form class="form-email" method="POST" action="">
+                            <input type="checkbox" id="modal">
+                            <label class="connect-tv" for="modal">Подключиться</label>
+    <div class="popup">
+                            <div class="apply__connect">
+                                <label for="modal" class="close">+</label>
+                                <div class="apply__title">Заявка на подключение</div>
+                                <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                            <div class="form-info">
+                                <input type="text" class="your__name upper" placeholder="ваше имя">
+                                <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                            </div>
+                                <input class="checkbox" id="checkbox" type="checkbox">
+                               <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
+                                <button  class="connect-tv">Подключиться</button>
+                                <div class="pidcladka"></div>
+                            </div>
+    </div>
                         </form>
                         </div>
                     </div>
@@ -492,24 +497,24 @@
                             <div class="price__rate-text">Черное-100<span class="one">2</span></div>
                             <img class="rate-img1" src="images/rates/rate10.svg" alt="">
                             <div class="price__tv">1000 руб/мес</div>
-                        <form action="">
-                            <button class="connect-tv" data-popup="popup10">Подключиться</button>
-
-                            <div id="popup10" class="popup">
-                                <div class="apply__connect">
-                                    <span class="close">&times;</span>
-                                    <div class="apply__title">Заявка на подключение</div>
-                                    <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
-                                <div class="form-info">
-                                    <input type="text" class="your__name upper" placeholder="ваше имя">
-                                    <input type="tel" class="your__phone upper" placeholder="ваш телефон">
-                                </div>
-                                    <input class="checkbox" id="checkbox" type="checkbox">
-                                   <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
-                                    <button  class="connect-tv" data-popup="popup10">Подключиться</button>
-                                    <div class="pidcladka"></div>
-                                </div>
-        </div>
+                        <form class="form-email" method="POST" action="">
+                            <input type="checkbox" id="modal">
+                            <label class="connect-tv" for="modal">Подключиться</label>
+    <div class="popup">
+                            <div class="apply__connect">
+                                <label for="modal" class="close">+</label>
+                                <div class="apply__title">Заявка на подключение</div>
+                                <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                            <div class="form-info">
+                                <input type="text" class="your__name upper" placeholder="ваше имя">
+                                <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                            </div>
+                                <input class="checkbox" id="checkbox" type="checkbox">
+                               <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
+                                <button  class="connect-tv">Подключиться</button>
+                                <div class="pidcladka"></div>
+                            </div>
+    </div>
                         </form>
                         </div>
                     </div>
@@ -536,21 +541,23 @@
             <img class="number__footer" src="images/footer/number.png" alt="">
             <a href="tel:8495662442" class="tel__footer">8 (495) 662-44-20</a>
         </div>
-    
-        <form action="" method="POST">
-            <button class="call-num-footer" data-popup="61">Заказать звонок</button>
-    <div id="popup61" class="popup connect-adapt">
+    <div class="form-footer">
+        <form class="call-num-form-footer" action="" method="POST">
+            <input type="checkbox" id="modal2">
+            <label class="call-num-footer" for="modal2">Заказать звонок</label>
+<div class="popup connect-adapt">
             <div class="form__connect">
                     <div class="form__title">Введите данные и наш
-    специалист позвонит Вам</div>
-                <span class="close close-connect">&times;</span>
+специалист позвонит Вам</div>
+                    <label for="modal2" class="close">+</label>
                     <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
                     <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
                     <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
-                    <button class="form__connect-btn"  data-popup="popup61">Заказать звонок</button>
+                    <button class="form__connect-btn">Заказать звонок</button>
             </div>
         </div>
         </form>
+    </div>
         <div class="cabimnet__footer">
             <img class="privat-footer" src="images/header-icon/private-header.svg" alt="privat">
             <div class="privat-text__top-footer">Личный кабинет</div>

@@ -75,20 +75,3 @@ sidebarToggleBtn.onclick = function () {
   menuIcon.classList.toggle('menu-icon-active');
   sidebar.classList.toggle('top-header-mobile-active');
 }
-
-let popupsToggle = document.querySelectorAll('.connect-tv .call-num .call-num-footer .call-num-mobile');
-let popupClose = document.querySelectorAll('.close');
-
-    popupsToggle.forEach(function(item) {
-        item.addEventListener('click', function() {
-            let popupName = item.getAttribute('data-popup');
-            document.getElementById(popupName).style.display = "block"
-        })
-    })
-
-    popupClose.forEach(function(item) {
-        item.addEventListener('click', function() {
-            var popup = item.closest('.popup');
-            popup.style.display = "none"
-        })
-    })

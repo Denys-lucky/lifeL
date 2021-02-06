@@ -14,44 +14,53 @@ html{
 }
 
 .popup{
-    display: none;
+    display:block;
     position: fixed;
-    z-index: 1000000000;
+    z-index: 10;
     left: 30%;
     top:30%;
     overflow: auto;
+    top: -9000px;
+    transition:all .3s ease;
+}
+#modal{
+    display: none;
+}
+#modal:checked ~ .popup{
+    top: 24%;
+}
+
+
+#modal2{
+    display: none;
+}
+#modal2:checked ~ .popup{
+    top: 25%;
 }
 
 .close{
-    width: 8px;
-    height: 2px;
-    color: red;
-    z-index: 10;
-    font-size: 70px;
-    top: 25px;
     position: absolute;
-    left:550px;
+    top: 5px;
+    right: 40px;
+    transform: rotate(45deg);
+    font-size: 45px;
     cursor: pointer;
 }
 
-.close-connect{
-    left:630px;
+.form-pad {
+    position: absolute;
+    margin-top:270px;
 }
 
-    @keyframes animatepopup {
-
-
-        from{
-            top:-1000px;
-            overflow: 0;
-        }
-        to{
-            top: 0;
-            opacity: 1;
-        }
-
-    }
-
+.call-num{
+    top: -60px;
+}
+.call-num-form{
+    margin-top: 80px;
+}
+call-num-form-footer{
+    top: 200px;
+}
 h2{
     font-size: 25px;
 }
@@ -1026,6 +1035,21 @@ list__item-seacrh{
     margin-top: 30px;
 }
 
+.tel-btn-form{
+    position: absolute;
+    margin-top: 60px;
+}
+
+.tel-btn-form2{
+    position: absolute;
+    margin-top: 30px;
+}
+
+.tel-btn-form6{
+    position: absolute;
+    margin-top: 30px;
+}
+
 .tel-btn:last-child{
     margin-top: 10px;
 }
@@ -1720,6 +1744,11 @@ input{
     color: #000000;
     margin-right: 90px;
 }
+
+.form-footer{
+    margin-top: 160px;
+}
+
 .privat-footer{
     margin-top: 135px;
     margin-right: 13px;

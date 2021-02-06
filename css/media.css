@@ -42,6 +42,10 @@
     .privat-header{
         margin-top: 20px;
     }
+
+    .contact__img{
+        display: none;
+    }
 }
 
 @media(max-width:1752px){
@@ -1061,6 +1065,10 @@
 
     .blue{
         font-size: 12px;
+    }
+
+    .size__televidenee{
+        font-size: 10px;
     }
 
 }
