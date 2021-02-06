@@ -356,6 +356,10 @@
         top: 25%;
         left: 16.7%;
     }
+
+    .contact-provide-img{
+        display: block;
+    }
 }
 
 @media(max-width:1070px){
@@ -638,6 +642,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .social-img{
+        display: block;
     }
 
 }

@@ -1728,13 +1728,15 @@ input{
 }
 .support-footer-text{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 37px;
     letter-spacing: 0.025em;
     color: #FFFFFF;
     max-width: 280px;
-    margin-left: 25px;
-    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 35px;
+    text-decoration: none;
 }
 .number__block{
     margin-top:150px;
@@ -1781,6 +1783,7 @@ input{
     color: #fff;
     display: inline-block;
     margin-top: 165px;
+    text-decoration: none;
 }
 .menu__list-f{
     display: block;
