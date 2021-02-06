@@ -1109,7 +1109,7 @@
     }
 
     #modal:checked ~ .popup{
-        top: 25%;
+        top: 35%;
     }
 
 }
