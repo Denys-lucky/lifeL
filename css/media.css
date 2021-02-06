@@ -1108,6 +1108,10 @@
         margin-bottom: 0px;
     }
 
+    #modal:checked ~ .popup{
+        top: 25%;
+    }
+
 }
 
 @media(max-width:480px){
