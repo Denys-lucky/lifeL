@@ -433,7 +433,7 @@
     .toggle-sidebar{
         display: flex;
         position: absolute;
-        top: 7%;
+        top: 9%;
         right: 4%;
         padding-bottom: 76px;
         z-index: 30;
@@ -995,7 +995,9 @@
     }
 
     .logo-header{
-        width: 250px;
+        width: 230px;
+        margin-top: 0;
+        margin-left: -70px;
     }
 
     .toggle-sidebar{
@@ -1098,6 +1100,12 @@
 
     .size__televidenee{
         font-size: 10px;
+    }
+
+    .top__header{
+        display: flex;
+        margin-left: 110px;
+        margin-bottom: 0px;
     }
 
 }
