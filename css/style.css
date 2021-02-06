@@ -27,7 +27,7 @@ html{
     display: none;
 }
 #modal:checked ~ .popup{
-    top: 24%;
+    top: 20%;
 }
 
 

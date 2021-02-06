@@ -433,7 +433,7 @@
     .toggle-sidebar{
         display: flex;
         position: absolute;
-        top: 9%;
+        top: 5%;
         right: 4%;
         padding-bottom: 76px;
         z-index: 30;

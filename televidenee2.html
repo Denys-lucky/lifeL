@@ -18,7 +18,7 @@
             <img class="logo-header" src="images/header-icon/logo-header.svg" alt="logo-header">
             <div class="sales__top-header">
                 <img class="sales-header" src="images/header-icon/sales-header.svg" alt="sales">
-                <a href="" class="sales-text__top-header">Отдел продаж</a>
+                <a href="buisnes.html" class="sales-text__top-header">Отдел продаж</a>
             </div>
             <div class="number__top-header">
                 <img class="number-header" src="images/header-icon/number-header.svg" alt="number">
@@ -41,7 +41,7 @@
             </form>
             <div class="privat__top-header">
                 <img class="privat-header" src="images/header-icon/private-header.svg" alt="privat">
-                <a href="#" class="privat-text__top-header">Личный кабинет</a>
+                <a href="index.html" class="privat-text__top-header">Личный кабинет</a>
             </div>
         </div>
 
@@ -63,21 +63,20 @@
         
                  <nav class="menu__mobile">
 
-                    <form action="">
-                        <button class="call-num-mobile">Заказать звонок</button>
-
-                        <div class="popup connect-adapt">
-                            <div class="form__connect">
-                                    <div class="form__title">Введите данные и наш
-            специалист позвонит Вам</div>
-                                <div class="close close-connect">+</div>
-                                    <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
-                                    <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
-                                    <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
-                                    <button class="form__connect-btn">Заказать звонок</button>
-                            </div>
+                    <form class="call-num-form-mobile" action="" method="POST">
+                        <input type="checkbox" id="modal2">
+                        <label class="call-num-mobile call-num-top" for="modal2">Заказать звонок</label>
+        <div class="popup connect-adapt">
+                        <div class="form__connect form__connect-mobile">
+                                <div class="form__title">Введите данные и наш
+        специалист позвонит Вам</div>
+                                <label for="modal2" class="close">+</label>
+                                <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
+                                <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
+                                <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
+                                <button class="form__connect-btn form__connect-btn-mobile">Заказать звонок</button>
                         </div>
-                        
+                    </div>
                     </form>
         
                      <ul class="menu__list-mobile">
@@ -105,7 +104,16 @@
                         <li class="menu__list-item-mobile">
                             <a href="contact.html" class="menu__list-link-mobile">Контакты</a>
                         </li>
+                 
                             <a href="tel:84956480020" class="header-tel-mobile">8 (495) 648-00-20</a>
+
+                            <li class="menu__list-item-mobile-sales">
+                                <a href="money.html" class="menu__list-link-mobile">Отдел продаж</a>
+                            </li>
+        
+                           <li class="menu__list-item-mobile-sales">
+                               <a href="index.html" class="menu__list-link-mobile">Личный кабинет</a>
+                           </li>
                      </ul>
                  </nav>
                 </div>
