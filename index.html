@@ -26,7 +26,7 @@
                 <img class="number-header" src="images/header-icon/number-header.svg" alt="number">
                 <a href="tel:84956480020" class="header-tel">8 (495) 648-00-20</a>
             </div>
-            <form class="call-num-form" action="" method="POST">
+            <form class="call-num-form" action="send.php" method="POST">
                 <input type="checkbox" id="modal2">
                 <label class="call-num call-num-top" for="modal2">Заказать звонок</label>
 <div class="popup connect-adapt">
@@ -34,9 +34,10 @@
                         <div class="form__title">Введите данные и наш
 специалист позвонит Вам</div>
                         <label for="modal2" class="close">+</label>
-                        <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
-                        <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
-                        <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
+
+                        <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect" required>
+                        <input type="tel" name="tel" value placeholder="Введите телефон" class="connect__phone form-connect" required>
+                        <input type="email" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
                         <button class="form__connect-btn">Заказать звонок</button>
                 </div>
             </div>
@@ -65,7 +66,7 @@
         
                  <nav class="menu__mobile">
 
-                    <form class="call-num-form-mobile" action="" method="POST">
+                    <form class="call-num-form-mobile" action="send.php" method="POST">
                         <input type="checkbox" id="modal2">
                         <label class="call-num-mobile call-num-top" for="modal2">Заказать звонок</label>
         <div class="popup connect-adapt">
@@ -166,6 +167,10 @@
                 <p class="slider__text">Высокоскоростной безлимитный Интернет от ЛАЙФЛИНК! </p>
                 <a class="btn-connect" href="register.html">Подключить</a>
                 <a class="btn-rates" href="money.html">Тарифные планы</a>
+                <div class="slick-arrow">
+                    <div class="slick-prev"></div>
+                    <div class="slick-next"></div>
+                </div>
             </div>
             </div>
         <div class="slider__item">
@@ -175,6 +180,10 @@
                 <p class="slider__text">Высокоскоростной безлимитный Интернет от ЛАЙФЛИНК! </p>
                 <a class="btn-connect" href="register.html">Подключить</a>
                 <a class="btn-rates" href="money.html">Тарифные планы</a>
+                <div class="slick-arrow">
+                    <div class="slick-prev"></div>
+                    <div class="slick-next"></div>
+                </div>
             </div>
         </div>
         <div class="slider__item">
@@ -184,6 +193,10 @@
                 <p class="slider__text">Высокоскоростной безлимитный Интернет от ЛАЙФЛИНК! </p>
                 <a class="btn-connect" href="register.html">Подключить</a>
                 <a class="btn-rates" href="money.html">Тарифные планы</a>
+                <div class="slick-arrow">
+                    <div class="slick-prev"></div>
+                    <div class="slick-next"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -191,15 +204,15 @@
 
   <section class="news">
       <div class="news__inner">
-    <form class="forms" action="">
+    <form class="forms" method="POST" action="send.php">
         <div class="apply__connect">
             <div class="apply__title">Заявка на подключение</div>
-            <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+            <input class="select__street upper" type="text" name="street" required placeholder="Введите вашу улицу">
         <div class="form-info">
-            <input type="text" class="your__name upper" placeholder="ваше имя">
-            <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+            <input type="text" class="your__name upper" name="name" placeholder="ваше имя" required>
+            <input type="tel" class="your__phone upper" name="tel" placeholder="ваш телефон" required>
         </div>
-            <input class="checkbox" id="checkbox" type="checkbox">
+            <input class="checkbox" required id="checkbox" type="checkbox">
            <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
             <button class="btn__to-connect">Подключиться</button>
             <div class="pidcladka"></div>
@@ -208,16 +221,19 @@
         <div class="apply__connect">
             <div class="apply__title">Пополнить счет</div>
         <div class="form-info">
-            <input type="text" class="your__name summa upper" placeholder="№ ПЛАТЕЖНЫЙ">
-            <input type="tel" class="your__phone phone upper" placeholder="СУММА">
+            <input type="text" name="pay" class="your__name summa upper" required placeholder="№ ПЛАТЕЖНЫЙ">
+            <input type="tel" name="summa" class="your__phone phone upper" required placeholder="СУММА">
         </div>
-            <input class="checkbox" id="checkbox2" type="checkbox">
+            <input class="checkbox" required id="checkbox2" type="checkbox">
             <label class="text-check"  for="checkbox2">Я даю согласие на обработку персональных данных</label>
             <img class="form-card" src="images/forma/card.png" alt="">
             <button class="btn__to-connect">Оплатить</button>
             <div class="pidcladka"></div>
         </div>
+
     </form>
+
+
     <div class="our__news">
         <div class="our__main">
             <div class="our__title">Наши новости</div>
@@ -249,7 +265,7 @@
  </div>
 </section>
 
-<footer class="footer">
+  <footer class="footer">
     <div class="footer__inner">
     <div class="footer-footer-pad">
         <img class="logo-footer" src="images/footer/logo-footer.svg" alt="footer-logo">
@@ -266,7 +282,7 @@
         <a href="tel:8495662442" class="tel__footer">8 (495) 662-44-20</a>
     </div>
 <div class="form-footer">
-    <form class="call-num-form-footer" action="" method="POST">
+    <form class="call-num-form-footer" action="send.php" method="POST">
         <input type="checkbox" id="modal2">
         <label class="call-num-footer" for="modal2">Заказать звонок</label>
 <div class="popup connect-adapt">
@@ -274,9 +290,10 @@
                 <div class="form__title">Введите данные и наш
 специалист позвонит Вам</div>
                 <label for="modal2" class="close">+</label>
-                <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
-                <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
-                <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
+
+                <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect" required>
+                <input type="tel" name="tel" value placeholder="Введите телефон" class="connect__phone form-connect" required>
+                <input type="email" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
                 <button class="form__connect-btn">Заказать звонок</button>
         </div>
     </div>
@@ -327,8 +344,6 @@
     <p class="foter__text">© 2020 http://www.lifelink.ru Все права защищены</p>
 </div>
 </footer>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>

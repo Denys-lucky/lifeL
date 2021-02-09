@@ -26,7 +26,7 @@
                 <img class="number-header" src="images/header-icon/number-header.svg" alt="number">
                 <a href="tel:84956480020" class="header-tel">8 (495) 648-00-20</a>
             </div>
-            <form class="call-num-form" action="" method="POST">
+            <form class="call-num-form" action="send.php" method="POST">
                 <input type="checkbox" id="modal2">
                 <label class="call-num call-num-top" for="modal2">Заказать звонок</label>
 <div class="popup connect-adapt">
@@ -34,9 +34,9 @@
                         <div class="form__title">Введите данные и наш
 специалист позвонит Вам</div>
                         <label for="modal2" class="close">+</label>
-                        <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
-                        <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
-                        <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
+                        <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect" required>
+                        <input type="tel" name="tel" value placeholder="Введите телефон" class="connect__phone form-connect" required>
+                        <input type="email" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
                         <button class="form__connect-btn">Заказать звонок</button>
                 </div>
             </div>
@@ -65,7 +65,7 @@
         
                  <nav class="menu__mobile">
 
-                    <form class="call-num-form-mobile" action="" method="POST">
+                    <form class="call-num-form-mobile" action="send.php" method="POST">
                         <input type="checkbox" id="modal2">
                         <label class="call-num-mobile call-num-top" for="modal2">Заказать звонок</label>
         <div class="popup connect-adapt">

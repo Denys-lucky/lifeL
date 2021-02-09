@@ -26,7 +26,7 @@
                 <img class="number-header" src="images/header-icon/number-header.svg" alt="number">
                 <a href="tel:84956480020" class="header-tel">8 (495) 648-00-20</a>
             </div>
-            <form class="call-num-form" action="" method="POST">
+            <form class="call-num-form" action="send.php" method="POST">
                 <input type="checkbox" id="modal2">
                 <label class="call-num call-num-top" for="modal2">Заказать звонок</label>
 <div class="popup connect-adapt">
@@ -34,9 +34,14 @@
                         <div class="form__title">Введите данные и наш
 специалист позвонит Вам</div>
                         <label for="modal2" class="close">+</label>
-                        <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
-                        <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
-                        <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
+
+                        <input type="hidden" name="project_name" value="lifeLink">
+                        <input type="hidden" name="admin_email" value="info@lifelink.ru">
+                        <input type="hidden" name="form_subject" value="header">
+
+                        <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect" required>
+                        <input type="tel" name="tel" value placeholder="Введите телефон" class="connect__phone form-connect" required>
+                        <input type="email" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
                         <button class="form__connect-btn">Заказать звонок</button>
                 </div>
             </div>
@@ -65,7 +70,7 @@
         
                  <nav class="menu__mobile">
 
-                    <form class="call-num-form-mobile" action="" method="POST">
+                    <form class="call-num-form-mobile" action="send.php" method="POST">
                         <input type="checkbox" id="modal2">
                         <label class="call-num-mobile call-num-top" for="modal2">Заказать звонок</label>
         <div class="popup connect-adapt">
@@ -188,20 +193,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Вызов специалиста для диагностики и выполнения работ</div>
             <div class="buy__price">Бесплатно</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -218,20 +223,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Ремонт кабеля: сращивание/удлинение/обжим коннектора (менее 1 раза в 6 мес.)</div>
             <div class="buy__price">Бесплатно</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -243,20 +248,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Ремонт кабеля: сращивание/удлинение/обжим коннектора (более 1 раза в 6 мес.)</div>
             <div class="buy__price">600 руб</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -268,20 +273,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Обжим сетевой розетки</div>
             <div class="buy__price">300 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -293,20 +298,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Полная перепротяжка кабеля до оборудования Лайфлинка</div>
             <div class="buy__price">900 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -318,20 +323,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Частичная перепротяжка/замена кабеля</div>
             <div class="buy__price">600 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -343,20 +348,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Изготовление патч-корда/кросс-кабеля</div>
             <div class="buy__price">100 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -368,20 +373,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Сверление отверстия для кабеля (толщина стены до 42 см. включительно)</div>
             <div class="buy__price">100 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -393,20 +398,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Сверление отверстия для кабеля (толщина стены более 42 см.)</div>
             <div class="buy__price">200 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -418,20 +423,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Прокладка кабеля под плинтусом (за 1 м.)</div>
             <div class="buy__price">-</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -443,20 +448,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Прокладка кабеля вдоль плинтуса (за 1 м.)</div>
             <div class="buy__price">-</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -468,20 +473,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">1 м. кабеля UTP категории 5e</div>
             <div class="buy__price">30 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -498,20 +503,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка роутера/точки доступа (менее 1 раза в 6 мес.)</div>
             <div class="buy__price">Бесплатно</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -523,20 +528,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка роутера/точки доступа (более 1 раза в 6 мес.)</div>
             <div class="buy__price">500 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -548,20 +553,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка/подключение принтера/сканера</div>
             <div class="buy__price">300 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -573,20 +578,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка/подключение МФУ</div>
             <div class="buy__price">400 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -598,20 +603,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка подключения к Интернету иной цифровой техники</div>
             <div class="buy__price">300 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -623,20 +628,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Подключение сети в офисе</div>
             <div class="buy__price">000 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -654,20 +659,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка подключения к Интернету на одном компьютере</div>
             <div class="buy__price">100 руб./бесплатно</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -679,20 +684,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Установка операционной системы (пробная версия)</div>
             <div class="buy__price">600 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -704,20 +709,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Установка операционной системы с носителя заказчика</div>
             <div class="buy__price">600 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -729,20 +734,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Восстановление операционной системы</div>
             <div class="buy__price">600 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -754,20 +759,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Установка, настройка или удаление игр и других программ</div>
             <div class="buy__price">200 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -779,20 +784,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Регистрация учётной записи для e-mail, Skype, ICQ и т. п.</div>
             <div class="buy__price">200 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -804,20 +809,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Установка кодеков для просмотра видео</div>
             <div class="buy__price">200 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -829,20 +834,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Перенос данных с неисправного компьютера</div>
             <div class="buy__price">400 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -854,20 +859,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Удаление SMS-блокеров, баннеров</div>
             <div class="buy__price">-</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -879,20 +884,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Запись информации на CD/DVD диск (за 1 диск)</div>
             <div class="buy__price">200 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -904,20 +909,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Установка антивируса с дистрибутива заказчика</div>
             <div class="buy__price">200 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -929,20 +934,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Создание рабочего места</div>
             <div class="buy__price">700 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -954,20 +959,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Установка антивируса по подписке</div>
             <div class="buy__price">Бесплатно</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -979,20 +984,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка вэб-камеры (за исключением камер видео-регистраторов)</div>
             <div class="buy__price">250 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -1004,20 +1009,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка IP-камеры</div>
             <div class="buy__price">250 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -1029,20 +1034,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Восстановление/удаление пароля учётной записи операционной системы</div>
             <div class="buy__price">400 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -1054,20 +1059,20 @@
         <div class="buy__block margin-money">
             <div class="buy__text">Настройка сетевого хранилища NAS</div>
             <div class="buy__price">300 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -1099,7 +1104,7 @@
         <a href="tel:8495662442" class="tel__footer">8 (495) 662-44-20</a>
     </div>
 <div class="form-footer">
-    <form class="call-num-form-footer" action="" method="POST">
+    <form class="call-num-form-footer" action="send.php" method="POST">
         <input type="checkbox" id="modal2">
         <label class="call-num-footer" for="modal2">Заказать звонок</label>
 <div class="popup connect-adapt">
@@ -1107,9 +1112,10 @@
                 <div class="form__title">Введите данные и наш
 специалист позвонит Вам</div>
                 <label for="modal2" class="close">+</label>
-                <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect">
-                <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect">
-                <input type="text" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
+
+                <input type="text" name="name" placeholder="Введите имя" class="connect__name form-connect" required>
+                <input type="tel" name="tel" placeholder="Введите телефон" class="connect__phone form-connect" required>
+                <input type="email" name="email" placeholder="Введите Ваш адрес (не обязательно)" class="connect__email form-connect">
                 <button class="form__connect-btn">Заказать звонок</button>
         </div>
     </div>

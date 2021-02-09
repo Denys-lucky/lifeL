@@ -26,7 +26,7 @@
                 <img class="number-header" src="images/header-icon/number-header.svg" alt="number">
                 <a href="tel:84956480020" class="header-tel">8 (495) 648-00-20</a>
             </div>
-            <form class="call-num-form" action="" method="POST">
+            <form class="call-num-form" action="send.php" method="POST">
                 <input type="checkbox" id="modal2">
                 <label class="call-num call-num-top" for="modal2">Заказать звонок</label>
 <div class="popup connect-adapt">
@@ -65,7 +65,7 @@
         
                  <nav class="menu__mobile">
 
-                    <form class="call-num-form-mobile" action="" method="POST">
+                    <form class="call-num-form-mobile" action="send.php" method="POST">
                         <input type="checkbox" id="modal2">
                         <label class="call-num-mobile call-num-top" for="modal2">Заказать звонок</label>
         <div class="popup connect-adapt">
@@ -163,45 +163,45 @@
         <div class="buy__block">
             <div class="buy__text">Беспроводной маршрутизатор SNR-CPE-ME2-Lite</div>
             <div class="buy__price">3 000 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-<div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
                     </div>
-</div>
+</div>>
             </form>
         </div>
 
         <div class="buy__block">
             <div class="buy__text">Сетевая карта PCI Compex RE 100-ATX TP</div>
             <div class="buy__price">100 руб.</div>
-            <form class="form-email" method="POST" action="">
+            <form class="form-email" method="POST" action="send.php">
                 <input type="checkbox" id="modal">
                 <label class="connect-tv tel-btn tel-btn-form6" for="modal">Подключиться</label>
 
-            <div class="popup">
+                <div class="popup">
                     <div class="apply__connect">
                         <label for="modal" class="close">+</label>
                         <div class="apply__title">Заявка на подключение</div>
-                        <input class="select__street upper" type="text" placeholder="Введите вашу улицу">
+                        <input class="select__street upper" required name="street" type="text" placeholder="Введите вашу улицу">
                     <div class="form-info">
-                        <input type="text" class="your__name upper" placeholder="ваше имя">
-                        <input type="tel" class="your__phone upper" placeholder="ваш телефон">
+                        <input type="text" required name="your_name"  class="your__name upper" placeholder="ваше имя">
+                        <input type="tel" required name="your_tel"  class="your__phone upper" placeholder="ваш телефон">
                     </div>
-                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <input class="checkbox" required id="checkbox" type="checkbox">
                        <label class="text-check"  for="checkbox">Я даю согласие на обработку персональных данных</label>
                         <button  class="connect-tv">Подключиться</button>
                         <div class="pidcladka"></div>
@@ -251,7 +251,7 @@
         <a href="tel:8495662442" class="tel__footer">8 (495) 662-44-20</a>
     </div>
 <div class="form-footer">
-    <form class="call-num-form-footer" action="" method="POST">
+    <form class="call-num-form-footer" action="send.php" method="POST">
         <input type="checkbox" id="modal2">
         <label class="call-num-footer" for="modal2">Заказать звонок</label>
 <div class="popup connect-adapt">
